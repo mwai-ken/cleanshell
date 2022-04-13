@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+   overflow: hidden;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: url('images/ser.jpg');
+    background-size: cover;
+    background-position: center;
+}
+nav{
+
+        background-color: rgb(46, 44, 44,0.5);
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 11vh;
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+
+}
+/*hamburger*/
+.menu-btn{
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    z-index: 1;
+}
+.menu-btn_lines,
+.menu-btn_lines::before,
+.menu-btn_lines::after{
+    width: 1.5rem;
+    height: 0.1rem;
+    background-color: azure;
+    transition: all 0.5s ease-in-out;
+}
+.menu-btn_lines::before,
+.menu-btn_lines::after{
+    content: "";
+    position: absolute;
+}
+.menu-btn_lines::before{
+    transform: translateY(-0.5rem);
+}
+.menu-btn_lines::after{
+    transform: translateY(0.5rem);
+}
+/*animation to the button*/
+.menu-btn.active .menu-btn_lines{
+    transform: translateX(2rem);
+    background-color: transparent;
+}
+.menu-btn.active .menu-btn_lines::before{
+    transform: rotate(45deg)  translate(-1.5rem,1.5rem);
+}
+.menu-btn.active .menu-btn_lines::after{
+    transform: rotate(-45deg)  translate(-1.5rem,-1.5rem);
+}
+
+#img{
+    width: 80%;
+    height: 100%;
+    background: rgb(245, 222, 179,0.5);
+    position: absolute;
+    top: 10%;
+    left: 10%;
+        
+}
+.content{
+    position: absolute;
+    top: 36%;
+    left: 20%;
+    float: left;
+}
+
+
+
+.logo{
+    width: 68px;
+    height: 65px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-top: 20px;
+    padding-right: 70px;
+    font-size: xx-large;
+}
+
+li a{
+    color: beige;
+    list-style: none;
+    text-decoration: none;
+}
+li a:hover{
+    color: red;
+}
+
+span{
+    color: blue;
+    cursor: pointer;
+}
+.content a{
+    border: double;
+    color: black;
+    border-style: outset;
+
+}
+.content a:hover{
+    color: brown;
+}
+
+
+#back{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 110%;
+    left: 0%;
+    background:url('images/i4.jpg');
+    background-position: center;
+    background-size: cover;
+   
+}
+.about {
+    color: aliceblue;
+    margin-top: 60px;
+}
+.about img{
+    float: left;
+}
+.about p{
+    font-size: x-large;
+}
+
+
+#outline{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 210%;
+    left: 0%;
+    background:rgba(170, 165, 180);  
+}
+.Services {
+    color: aliceblue;
+    margin-top: 60px;
+}
+
+.Services img{
+    float: left;
+}
+#hire{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 320%;
+    left: 0%;
+    background:rgb(72, 70, 77);    
+}
+.tool{
+    padding-top: 60px;
+}
+.tool img{
+    float: left;
+}
+/*media screen only*/
+@media  (max-width:912px) {
+    .nav{
+        
+        position: fixed;
+        inset: 0 0 0 30%;
+        background: rgb(18, 19, 19);
+        display: flex;
+        flex-direction: column;
+        transform: translate(100%);
+        z-index: 24;
+      
+    }
+    .nav li a{
+        font-size: x-large;
+        padding: 40px;
+    }
+    
+    
+    .menu-btn{
+        display: block;
+        z-index: 26;
+        position: fixed;
+        right: 8%;
+        top: 4%;
+    }
+    .nav-links.active{
+        transform: translateX(0%);
+    }
+}

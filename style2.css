@@ -1,0 +1,9 @@
+.book-bar{
+    width: 100vw;
+    height: 10vh;
+    background: black;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
