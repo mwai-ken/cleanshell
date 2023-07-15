@@ -252,7 +252,7 @@ p {
     height: 100vh;
     /* margin-top: 90px; */
   /* background-color: aqua; */
-  background-image: url(/assets/images/ser.jpg);
+  background-image: url(assets/images/ser.jpg);
   background-position: center;
   background-size: cover;
   /* position: fixed; */
