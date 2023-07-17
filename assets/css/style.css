@@ -720,6 +720,12 @@ padding-left: 35px;
                           #service p{
                             font-size: 17px;
                           }
+                          #hire button{
+                            position: absolute;
+                            top: 338%;
+                            right: 10%;
+                           
+                          }
                           #hire .equipments img{
                             /* padding-top: 90px; */
                             width:18vw ;
