@@ -252,7 +252,7 @@ p {
     height: 100vh;
     /* margin-top: 90px; */
   /* background-color: aqua; */
-  background-image:url('assets/images/back3.jpg');
+  background-image: url(/assets/images/ser.jpg);
   background-position: center;
   background-size: cover;
   /* position: fixed; */
@@ -628,6 +628,12 @@ padding-left: 35px;
                             /* height: 199vh; */
                             /* background-color: aquamarine; */
                          }
+                         #hire button{
+                            position: absolute;
+                            top: 348%;
+                            right: 10%;
+                           
+                          }
                           #hire .hire-content h1{
                             font-size: 33px;
                             padding-left: 2%;
